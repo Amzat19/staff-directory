@@ -70,35 +70,35 @@ npm start
 ```text
 src/
 ├── app/ # Next.js App Router
-│ ├── globals.css # Global styles
-│ ├── layout.tsx # Root layout
-│ └── page.tsx # Home page
+│   ├── globals.css # Global styles
+│   ├── layout.tsx # Root layout
+│   └── page.tsx # Home page
 ├── components/ # React components
-│ ├── employees/ # Employee-related components
-│ │ ├── EmployeeCard.tsx
-│ │ ├── EmployeeFilters.tsx
-│ │ ├── EmployeeGrid.tsx
-│ │ └── EmployeeTab.tsx
-│ ├── grades/ # Grade level components
-│ │ ├── GradeCard.tsx
-│ │ ├── GradeList.tsx
-│ │ └── GradeTab.tsx
-│ ├── modals/ # Modal dialogs
-│ │ ├── EmployeeModal.tsx
-│ │ └── GradeModal.tsx
-│ ├── staff-directory/ # Main container
-│ │ └── StaffDirectory.tsx
-│ └── ui/ # Shared UI components
-│ ├── Header.tsx
-│ └── LoadingSpinner.tsx
+│   ├── employees/ # Employee-related components
+│   │   ├── EmployeeCard.tsx
+│   │   ├── EmployeeFilters.tsx
+│   │   ├── EmployeeGrid.tsx
+│   │   └── EmployeeTab.tsx
+│   ├── grades/ # Grade level components
+│   │   ├── GradeCard.tsx
+│   │   ├── GradeList.tsx
+│   │   └── GradeTab.tsx
+│   ├── modals/ # Modal dialogs
+│   │   ├── EmployeeModal.tsx
+│   │   └── GradeModal.tsx
+│   ├── staff-directory/ # Main container
+│   │   └── StaffDirectory.tsx
+│   └── ui/ # Shared UI components
+│       ├── Header.tsx
+│       └── LoadingSpinner.tsx
 ├── hooks/ # Custom React hooks
-│ ├── useCities.ts # Fetch location data
-│ └── useLocalStorage.ts # Persist state
+│   ├── useCities.ts # Fetch location data
+│   └── useLocalStorage.ts # Persist state
 ├── lib/ # Utilities & constants
-│ ├── constants.ts
-│ └── utils.ts
+│   ├── constants.ts
+│   └── utils.ts
 └── types/ # TypeScript types
-└── index.ts
+    └── index.ts
 ```
 
 ## Architecture Decisions
@@ -131,10 +131,9 @@ src/
 
 ### External APIs
 
-| Endpoint | Purpose | Data |
-| :------- | :-----: | ---: |
-
-| https://pkgstore.datahub.io/core/world-cities/world-cities_json/data/5b3dd46ad10990bca47b04b4739a02ba/world-cities_json.json | Location Data | Countries, states, cities |
+| Endpoint                                                                                                                                         | Purpose       | Data                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- | ------------------------- |
+| [World Cities API](https://pkgstore.datahub.io/core/world-cities/world-cities_json/data/5b3dd46ad10990bca47b04b4739a02ba/world-cities_json.json) | Location Data | Countries, states, cities |
 
 ## Data Models
 
