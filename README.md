@@ -67,6 +67,7 @@ npm start
 
 ## Project Structure
 
+```text
 src/
 ├── app/ # Next.js App Router
 │ ├── globals.css # Global styles
@@ -98,6 +99,7 @@ src/
 │ └── utils.ts
 └── types/ # TypeScript types
 └── index.ts
+```
 
 ## Architecture Decisions
 
